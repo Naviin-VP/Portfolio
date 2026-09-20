@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Navin VP — Lead Engineer, Software Engineering, Data Automation">
+  <meta name="theme-color" content="#0b1220">
+  <title>Navin VP | Lead Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style id="company-logo-overrides">
+
+    /* ================================
+      NAVIN VP - PERSONAL LOGO
+    ================================ */
+
+    .logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+    }
+
+    /* Monogram */
+    .logo-mark {
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 12px;
+
+        background: linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        );
+
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: -1px;
+
+        box-shadow:
+            0 6px 18px rgba(37, 99, 235, 0.25);
+
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+    }
+
+    /* Name */
+    .logo-text {
+        font-size: 21px;
+        color: #111827;
+        letter-spacing: -0.8px;
+    }
+
+    .logo-text span {
+        color: #2563eb;
+        font-weight: 800;
+    }
+
+    /* Hover */
+    .logo:hover .logo-mark {
+        transform: rotate(-4deg) scale(1.05);
+
+        box-shadow:
+            0 8px 24px rgba(37, 99, 235, 0.35);
+    }
+
+    .logo:hover .logo-text {
+        color: #2563eb;
+    }
+
+    .logo:hover .logo-text span {
+        color: #7c3aed;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+        .logo {
+            gap: 7px;
+        }
+
+        .logo-mark {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+
+        .logo-text {
+            font-size: 18px;
+        }
+    }
+
+    .company-logo-image {
+      overflow: hidden;
+      background: rgba(255,255,255,.96);
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    .company-logo-image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+    .company-logo-dataweave {
+      padding: 7px 8px;
+    }
+    .company-logo-dataweave img {
+      object-fit: contain;
+    }
+    @media (max-width: 640px) {
+      .company-logo-image {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="progress-bar" id="progressBar"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">NVP</span>
+        <span class="logo-text">NAVIN<span> V P </span></span>
+      </a>
+      <nav id="mainNav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="pulse-dot"></span> LEAD ENGINEER • SOFTWARE • DATA AUTOMATION</p>
+          <h1>Where Engineering Meets <span> Data </span><br> Innovation Becomes Impact.</h1>
+          <p class="hero-text">
+            Software Developer & Technical Lead with 7+ years of experience in
+            data automation, web content transformation, healthcare systems,
+            backend workflow automation and production delivery.
+          </p>
+          <div class="hero-buttons">
+            <a href="#experience" class="btn primary">Explore My Work <span>↗</span></a>
+            <a href="#contact" class="btn glass">Let's Connect</a>
+          </div>
+          <div class="quick-info">
+            <span>📍 Chennai, Tamil Nadu</span>
+            <a href="mailto:naviin.vp@gmail.com">✉ naviin.vp@gmail.com</a>
+            <a href="tel:+919524116210">☎ +91 9524116210</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="photo-frame">
+            <div class="photo-ring"></div>
+            <img src="assets/navin-photo.jpg" alt="Navin VP professional portrait">
+            <div class="floating-card card-role">
+              <strong>7+ Years</strong>
+              <span>Engineering Experience</span>
+            </div>
+            <div class="floating-card card-stack">
+              <strong>Python · Perl · SQL</strong>
+              <span>Automation & Data</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-cue">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section class="marquee-strip" aria-label="Technology highlights">
+      <div class="marquee-track">
+        <span>PYTHON</span><i>✦</i><span>PERL</span><i>✦</i><span>SQL</span><i>✦</i>
+        <span>AWS S3</span><i>✦</i><span>WEB CRAWLERS</span><i>✦</i><span>HEALTHCARE</span><i>✦</i>
+        <span>DATA PIPELINES</span><i>✦</i><span>JAVA DMN</span><i>✦</i>
+        <span>PYTHON</span><i>✦</i><span>PERL</span><i>✦</i><span>SQL</span><i>✦</i>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-top reveal">
+          <p class="section-label">01 — ABOUT</p>
+          <span class="section-number">01</span>
+        </div>
+        <div class="section-heading reveal">
+          <h2>Turning complex data workflows into dependable systems.</h2>
+          <p>
+            Experienced across RCM platforms, e-commerce data ecosystems and financial
+            market intelligence, with hands-on work in bot development, data pipelines,
+            parsing, validation, insurance eligibility workflows and production support.
+          </p>
+        </div>
+
+        <div class="capability-grid">
+          <article class="capability-card reveal">
+            <div class="icon-wrap">⚕</div>
+            <h3>Healthcare Systems</h3>
+            <p>RCM workflows, HIPAA 834/835/837, eligibility automation, claims support and rules migration.</p>
+            <span class="card-line"></span>
+          </article>
+          <article class="capability-card reveal">
+            <div class="icon-wrap">⌘</div>
+            <h3>Automation & Data</h3>
+            <p>Web crawling, Python/Perl bots, data pipelines, parsing, validation, monitoring and extraction.</p>
+            <span class="card-line"></span>
+          </article>
+          <article class="capability-card reveal">
+            <div class="icon-wrap">↗</div>
+            <h3>Engineering Delivery</h3>
+            <p>Agile/Scrum, production support, deployment workflows, stakeholder collaboration and mentoring.</p>
+            <span class="card-line"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section dark-section">
+      <div class="container">
+        <div class="section-top reveal">
+          <p class="section-label">02 — EXPERIENCE</p>
+          <span class="section-number">02</span>
+        </div>
+
+        <div class="experience-head reveal">
+          <div>
+            <h2>Professional Journey</h2>
+            <p>
+              Explore the career journey company by company, with each role connected
+              through a visual timeline.
+            </p>
+          </div>
+          <div class="company-count">
+            <strong>03</strong>
+            <span>Companies</span>
+          </div>
+        </div>
+
+        <div class="company-journey">
+
+          <!-- CITIUSTECH -->
+          <article class="company-block reveal">
+            <div class="company-header">
+              <div class="company-brand">
+                <div class="company-logo company-logo-image"><img src="https://www.citiustech.com/hubfs/citiustech-2024/Media%20Kit/Logos/CT%20Ultramarine/SVG/CitiusTech%20Logo_and_Brand%20Colours-02.svg" alt="CitiusTech logo"></div>
+                <div>
+                  <span class="company-kicker">DEC 2024 — AUG 2026</span>
+                  <h3>Citiustech Healthcare</h3>
+                  <p>Chennai · Healthcare Technology</p>
+                </div>
+              </div>
+              <div class="company-duration">
+                <span>2 ROLES</span>
+                <strong>Dec 2024 — Aug 2026</strong>
+              </div>
+            </div>
+
+            <div class="company-line"></div>
+
+            <div class="company-timeline">
+              <div class="company-timeline-line"></div>
+
+              <article class="company-role">
+                <div class="role-date">
+                  <span>JUN 2025</span>
+                  <small>— AUG 2026</small>
+                </div>
+                <div class="role-dot"></div>
+                <div class="role-card">
+                  <div class="role-top">
+                    <div>
+                      <span class="role-number">01</span>
+                      <h4>Lead Engineer I</h4>
+                    </div>
+                    <span class="role-project">Rules 2.0 Migration</span>
+                  </div>
+                  <p class="role-client">Athena Healthcare</p>
+                  <ul>
+                    <li>Migrated Perl-based healthcare rules to standardized Java DMN models supporting HIPAA 834/835/837 claims automation and audit workflows.</li>
+                    <li>Performed manual and automated validation to ensure data integrity, compliance and controlled deployment.</li>
+                    <li>Collaborated with analysts and engineers, mentored teams on DMN usage, and delivered migration milestones using Agile/Scrum.</li>
+                  </ul>
+                  <div class="tags"><span>Perl</span><span>Python</span><span>Java DMN</span><span>Linux</span><span>JIRA</span><span>Git</span><span>Bitbucket</span><span>Windsurf</span></div>
+                </div>
+              </article>
+
+              <article class="company-role">
+                <div class="role-date">
+                  <span>DEC 2024</span>
+                  <small>— JUN 2025</small>
+                </div>
+                <div class="role-dot"></div>
+                <div class="role-card">
+                  <div class="role-top">
+                    <div>
+                      <span class="role-number">02</span>
+                      <h4>Technical Lead I</h4>
+                    </div>
+                    <span class="role-project">Front Desk Support (FDS)</span>
+                  </div>
+                  <p class="role-client">Athena Healthcare</p>
+                  <ul>
+                    <li>Enhanced RCM workflows for patient detail management and insurance eligibility, enabling faster and more accurate onboarding.</li>
+                    <li>Resolved critical production issues affecting claims and eligibility and improved release stability through rollout toggles.</li>
+                    <li>Partnered with stakeholders to analyze issues, prioritize changes, and deliver HIPAA-compliant improvements.</li>
+                  </ul>
+                  <div class="tags"><span>Perl</span><span>Python</span><span>Linux</span><span>JIRA</span><span>VS Code</span><span>Perforce</span><span>Bitbucket</span><span>Confluence</span></div>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <!-- MOBIUS -->
+          <article class="company-block reveal">
+            <div class="company-header">
+              <div class="company-brand">
+                <div class="company-logo company-logo-image"><img src="https://www.mobiusservices.com/img/mobius_logo.svg" alt="Mobius Knowledge Services logo"></div>
+                <div>
+                  <span class="company-kicker">FEB 2022 — NOV 2024</span>
+                  <h3>Mobius Knowledge Services</h3>
+                  <p>Chennai · Data & Software Engineering</p>
+                </div>
+              </div>
+              <div class="company-duration">
+                <span>2 ROLES</span>
+                <strong>Feb 2022 — Nov 2024</strong>
+              </div>
+            </div>
+
+            <div class="company-line"></div>
+
+            <div class="company-timeline">
+              <div class="company-timeline-line"></div>
+
+              <article class="company-role">
+                <div class="role-date"><span>FEB 2023</span><small>— NOV 2024</small></div>
+                <div class="role-dot"></div>
+                <div class="role-card">
+                  <div class="role-top">
+                    <div><span class="role-number">01</span><h4>Senior Software Engineer</h4></div>
+                    <span class="role-project">X-DAS Platform</span>
+                  </div>
+                  <p class="role-client">E-commerce, banking & stock-exchange data</p>
+                  <ul>
+                    <li>Built custom web crawlers for structured data extraction across leading e-commerce, banking and stock-exchange platforms.</li>
+                    <li>Developed Python bots on Linux for automated monitoring and harvesting; managed logs and cache storage in AWS S3.</li>
+                    <li>Maintained end-to-end workflows for price tracking, search visibility and performance analytics.</li>
+                  </ul>
+                  <div class="tags"><span>Python</span><span>Ubuntu</span><span>WinSCP</span><span>PuTTY</span><span>AWS S3</span><span>FileZilla</span></div>
+                </div>
+              </article>
+
+              <article class="company-role">
+                <div class="role-date"><span>FEB 2022</span><small>— JAN 2023</small></div>
+                <div class="role-dot"></div>
+                <div class="role-card">
+                  <div class="role-top">
+                    <div><span class="role-number">02</span><h4>Senior Software Engineer</h4></div>
+                    <span class="role-project">ICIS Outages</span>
+                  </div>
+                  <p class="role-client">Chemical, energy & fertilizer sectors in Europe</p>
+                  <ul>
+                    <li>Designed automation tools for content extraction across chemical, energy, and fertilizer sectors in Europe.</li>
+                    <li>Built scripts to capture outage and capacity data for market visibility and delivered structured updates through reporting pipelines.</li>
+                    <li>Resolved site changes and script interruptions to maintain continuity and reduce downtime.</li>
+                  </ul>
+                  <div class="tags"><span>Python</span><span>Pandas</span><span>SQL</span><span>HTML</span><span>JSON</span><span>CSV</span><span>FTP</span></div>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <!-- DATAWEAVE -->
+          <article class="company-block reveal">
+            <div class="company-header">
+              <div class="company-brand">
+                <div class="company-logo company-logo-image company-logo-dataweave"><img src="https://dataweave.com/assets/css/images/dw_logo_dark@4x.png" alt="Dataweave logo"></div>
+                <div>
+                  <span class="company-kicker">SEP 2021 — JAN 2022</span>
+                  <h3>DATAWEAVE Analytics</h3>
+                  <p>Chennai · Data Engineering</p>
+                </div>
+              </div>
+              <div class="company-duration">
+                <span>1 ROLE</span>
+                <strong>Sep 2021 — Jan 2022</strong>
+              </div>
+            </div>
+
+            <div class="company-line"></div>
+
+            <div class="company-timeline">
+              <div class="company-timeline-line"></div>
+              <article class="company-role">
+                <div class="role-date"><span>SEP 2021</span><small>— JAN 2022</small></div>
+                <div class="role-dot"></div>
+                <div class="role-card">
+                  <div class="role-top">
+                    <div><span class="role-number">01</span><h4>Data Engineer</h4></div>
+                    <span class="role-project">Copal</span>
+                  </div>
+                  <p class="role-client">Colgate-Palmolive Data Pipeline Management</p>
+                  <ul>
+                    <li>Designed and optimized data pipelines for product, SKU and marketing content extraction.</li>
+                    <li>Automated ingestion, monitoring, cleansing, standardization and exception handling for reliable analytics.</li>
+                    <li>Collaborated with stakeholders to align extraction logic with evolving data and reporting requirements.</li>
+                  </ul>
+                  <div class="tags"><span>Python</span><span>SQL</span><span>HTML</span><span>JIRA</span><span>Git</span><span>Linux</span></div>
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <!-- MOBIUS -->
+          <article class="company-block reveal">
+            <div class="company-header">
+              <div class="company-brand">
+                <div class="company-logo company-logo-image"><img src="https://www.mobiusservices.com/img/mobius_logo.svg" alt="Mobius Knowledge Services logo"></div>
+                <div>
+                  <span class="company-kicker">MAR 2019 — NOV 2024</span>
+                  <h3>Mobius Knowledge Services</h3>
+                  <p>Chennai · Data & Software Engineering</p>
+                </div>
+              </div>
+              <div class="company-duration">
+                <span>5 ROLES</span>
+                <strong>Mar 2019 — SEP 2021</strong>
+              </div>
+            </div>
+
+            <div class="company-line"></div>
+
+            <div class="company-timeline">
+              <div class="company-timeline-line"></div>
+
+              <article class="company-role">
+                <div class="role-date"><span>FEB 2021</span><small>— SEP 2021</small></div>
+                <div class="role-dot"></div>
+                <div class="role-card">
+                  <div class="role-top">
+                    <div><span class="role-number">03</span><h4>Senior Software Engineer</h4></div>
+                    <span class="role-project">ICIS</span>
+                  </div>
+                  <p class="role-client">Petrochemical, energy & fertilizer data</p>
+                  <ul>
+                    <li>Developed Perl automation scripts to collect pricing and trend data from petrochemical, energy and fertilizer websites.</li>
+                    <li>Enhanced real-time parsing and database uploads and added error handling for changing website structures.</li>
+                    <li>Documented tools and processes to support team-wide knowledge sharing.</li>
+                  </ul>
+                  <div class="tags"><span>Perl</span><span>SQL</span><span>HTML</span><span>FTP</span></div>
+                </div>
+              </article>
+
+              <article class="company-role">
+                <div class="role-date"><span>APR 2020</span><small>— JAN 2021</small></div>
+                <div class="role-dot"></div>
+                <div class="role-card">
+                  <div class="role-top">
+                    <div><span class="role-number">04</span><h4>Software Engineer — L2</h4></div>
+                    <span class="role-project">Cedarose</span>
+                  </div>
+                  <p class="role-client">Multilingual business & financial content</p>
+                  <ul>
+                    <li>Engineered multilingual data pipelines for structured business and financial content across Arabic and non-English websites.</li>
+                    <li>Developed crawling scripts with encoding and character handling and automated backups, scheduling and validation.</li>
+                    <li>Served as client liaison with weekly project and delivery updates.</li>
+                  </ul>
+                  <div class="tags"><span>Perl</span><span>SQL</span><span>HTML</span><span>FTP</span><span>SVN</span><span>Web Crawlers</span></div>
+                </div>
+              </article>
+
+              <article class="company-role">
+                <div class="role-date"><span>NOV 2019</span><small>— MAR 2020</small></div>
+                <div class="role-dot"></div>
+                <div class="role-card">
+                  <div class="role-top">
+                    <div><span class="role-number">05</span><h4>Software Engineer — L1</h4></div>
+                    <span class="role-project">Geolytics</span>
+                  </div>
+                  <p class="role-client">Restaurant & vendor data</p>
+                  <ul>
+                    <li>Built Perl scripts to extract restaurant and vendor listings from major food-delivery platforms.</li>
+                    <li>Implemented anti-blocking logic and maintained deliverable tracking to support data accuracy and timelines.</li>
+                  </ul>
+                  <div class="tags"><span>Perl</span><span>SQL</span><span>FTP</span><span>HTML</span></div>
+                </div>
+              </article>
+
+              <article class="company-role">
+                <div class="role-date"><span>MAY 2019</span><small>— OCT 2019</small></div>
+                <div class="role-dot"></div>
+                <div class="role-card">
+                  <div class="role-top">
+                    <div><span class="role-number">06</span><h4>Trainee Software Engineer</h4></div>
+                    <span class="role-project">TripAdvisor</span>
+                  </div>
+                  <p class="role-client">Restaurant data collection</p>
+                  <ul>
+                    <li>Developed custom scripts to collect restaurant data using dynamic client filters and improved pagination, layout and language handling.</li>
+                    <li>Coordinated with QA and delivery teams to support validated dataset handover.</li>
+                  </ul>
+                  <div class="tags"><span>Perl</span><span>SQL</span><span>FTP</span></div>
+                </div>
+              </article>
+
+              <article class="company-role">
+                <div class="role-date"><span>MAR 2019</span><small>— MAY 2019</small></div>
+                <div class="role-dot"></div>
+                <div class="role-card">
+                  <div class="role-top">
+                    <div><span class="role-number">07</span><h4>Internship Student</h4></div>
+                    <span class="role-project">Chain Store Guide (CSG)</span>
+                  </div>
+                  <p class="role-client">US & Canada store data</p>
+                  <ul>
+                    <li>Supported lead generation by collecting store data across the US and Canada.</li>
+                    <li>Assisted with bot development, debugging and data enrichment.</li>
+                  </ul>
+                  <div class="tags"><span>Perl</span><span>Regular Expressions</span><span>SQL</span></div>
+                </div>
+              </article>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-top reveal">
+          <p class="section-label">03 — SKILLS</p>
+          <span class="section-number">03</span>
+        </div>
+        <div class="section-heading reveal">
+          <h2>A practical toolkit for building and maintaining data systems.</h2>
+          <p>Technology experience spanning programming, data, healthcare rules, cloud, web formats, DevOps and engineering tools.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal"><h3>Programming & Data</h3><div class="skill-list"><span>Python</span><span>Perl</span><span>SQL</span><span>Pandas</span><span>NumPy</span><span>Regular Expressions</span></div></div>
+          <div class="skill-group reveal"><h3>Healthcare & Rules</h3><div class="skill-list"><span>Java DMN</span><span>HIPAA 834/835/837</span><span>RCM Workflows</span></div></div>
+          <div class="skill-group reveal"><h3>Cloud & DevOps</h3><div class="skill-list"><span>AWS S3</span><span>Jenkins</span><span>Git</span><span>Bitbucket</span><span>Perforce</span><span>ADF (Azure)</span></div></div>
+          <div class="skill-group reveal"><h3>Web & Formats</h3><div class="skill-list"><span>HTML</span><span>JSON</span><span>XML</span><span>CSV</span><span>FTP</span><span>PDF</span><span>Web Crawlers</span></div></div>
+          <div class="skill-group reveal"><h3>Tools & Collaboration</h3><div class="skill-list"><span>JIRA</span><span>Confluence</span><span>VS Code</span><span>Windsurf</span><span>Claude</span><span>Bruno</span></div></div>
+          <div class="skill-group reveal"><h3>Linux & Utilities</h3><div class="skill-list"><span>Linux / Ubuntu</span><span>PuTTY</span><span>WinSCP</span><span>FileZilla</span><span>Excel</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section cert-section">
+      <div class="container">
+        <div class="section-top reveal">
+          <p class="section-label">04 — CERTIFICATIONS</p>
+          <span class="section-number">04</span>
+        </div>
+        <div class="experience-head reveal">
+          <div>
+            <h2>Continuous Learning</h2>
+            <p>Selected certifications and learning achievements across programming, data, cloud, web scraping and AI tools.</p>
+          </div>
+          <div class="cert-count"><strong>09</strong><span>Certificates</span></div>
+        </div>
+
+        <div class="cert-grid">
+          <a class="cert-card reveal" href="https://www.hackerrank.com/certificates/iframe/1ff993174d5f" target="_blank" rel="noopener"><span class="cert-brand">HACKERRANK</span><h3>SQL (Basics)</h3><p>SQL fundamentals and problem solving</p><span class="view-cert">View Certificate ↗</span></a>
+          <a class="cert-card reveal" href="https://www.hackerrank.com/certificates/iframe/f3acce88c23a" target="_blank" rel="noopener"><span class="cert-brand">HACKERRANK</span><h3>Python (Basics)</h3><p>Python fundamentals and coding</p><span class="view-cert">View Certificate ↗</span></a>
+          <a class="cert-card reveal" href="https://media.geeksforgeeks.org/courses/certificates/a87472bfb2d07a1e2910cdb376e00899.pdf" target="_blank" rel="noopener"><span class="cert-brand">GEEKSFORGEEKS</span><h3>Python</h3><p>Python programming certification</p><span class="view-cert">View Certificate ↗</span></a>
+          <a class="cert-card reveal" href="https://www.sololearn.com/en/certificates/CC-Q4LTOXLZ" target="_blank" rel="noopener"><span class="cert-brand">SOLOLEARN</span><h3>SQL Intermediate</h3><p>Intermediate SQL concepts</p><span class="view-cert">View Certificate ↗</span></a>
+          <a class="cert-card reveal" href="https://verify.skilljar.com/c/g4yah32oyqp3" target="_blank" rel="noopener"><span class="cert-brand">ANTHROPIC</span><h3>Claude 101</h3><p>Introduction to Claude</p><span class="view-cert">Verify Certificate ↗</span></a>
+          <a class="cert-card reveal" href="https://verify.skilljar.com/c/zvg4wbvpztdq" target="_blank" rel="noopener"><span class="cert-brand">ANTHROPIC</span><h3>Claude Code in Action</h3><p>Hands-on Claude Code learning</p><span class="view-cert">Verify Certificate ↗</span></a>
+          <a class="cert-card reveal" href="https://certificates.simplicdn.net/share/7958551_39510251740476894160.pdf" target="_blank" rel="noopener"><span class="cert-brand">SIMPLILEARN</span><h3>GenAI for Beginners</h3><p>Generative AI fundamentals</p><span class="view-cert">View Certificate ↗</span></a>
+          <a class="cert-card reveal" href="https://certificates.simplicdn.net/share/7939095_39510251740129083979.pdf" target="_blank" rel="noopener"><span class="cert-brand">SIMPLILEARN</span><h3>AWS S3 for Beginners</h3><p>Cloud storage fundamentals</p><span class="view-cert">View Certificate ↗</span></a>
+          <a class="cert-card reveal" href="https://certificates.simplicdn.net/share/7938724_39510251740123635198.pdf" target="_blank" rel="noopener"><span class="cert-brand">SIMPLILEARN</span><h3>Web Scraping with Python</h3><p>Web extraction and automation</p><span class="view-cert">View Certificate ↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section highlight-section">
+      <div class="container highlight-grid">
+        <div class="highlight-copy reveal">
+          <p class="section-label">05 — EDUCATION & RECOGNITION</p>
+          <h2>Learning, delivery and going the extra mile.</h2>
+          <p>B.Tech — Information Technology, Muthayammal Engineering College, Rasipuram · 2019 · GPA 70.</p>
+          <p>HSC, KRP Matriculation and Higher Secondary School, Pachampalayam · 2015 · GPA 83.33.</p>
+          <p>SSLC, KRP Matriculation and Higher Secondary School, Pachampalayam · 2013 · GPA 91.20.</p>
+          <p>Languages: Tamil, English</p>
+        </div>
+        <div class="awards reveal">
+          <div class="award"><span>2020</span><h3>Going the Extra Mile (GEM) Award</h3></div>
+          <div class="award"><span>2023</span><h3>Going the Extra Mile (GEM) Award</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-box reveal">
+        <div class="contact-photo">
+          <img src="assets/navin-photo.jpg" alt="Navin VP">
+        </div>
+        <div class="contact-copy">
+          <p class="section-label">06 — CONTACT</p>
+          <h2>Let's build something<br><span>meaningful.</span></h2>
+          <p>For opportunities involving software engineering, data automation, healthcare systems or backend workflow solutions, feel free to connect.</p>
+          <div class="contact-links">
+            <a href="mailto:naviin.vp@gmail.com">Email Me ↗</a>
+            <a href="tel:+919524116210">Call ↗</a>
+            <a href="https://www.linkedin.com/in/navin-v-p-000b47350/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+          <div class="signature">
+            <span>Regards,</span>
+            <img src="assets/navin-signature.png" alt="Navin VP signature">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Navin VP</span>
+      <!-- <span>Designed with HTML, CSS & JavaScript</span> -->
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
