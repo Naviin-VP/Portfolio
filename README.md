@@ -39,11 +39,8 @@ navin-vp-portfolio/
 
 ## GitHub Pages
 
-1. Create a GitHub repository such as `navin-vp-portfolio`.
-2. Upload all files and the `assets` folder.
-3. Open **Settings → Pages**.
-4. Select **Deploy from a branch**.
-5. Choose `main` and `/ (root)`.
-6. Save.
+1. In the repository, open **Settings → Pages**.
+2. Under **Build and deployment**, select **GitHub Actions** as the source.
+3. Push to `main` or run the **Deploy portfolio to GitHub Pages** workflow from the **Actions** tab.
 
-The site will then be available through the GitHub Pages URL shown by GitHub.
+The workflow publishes the static site automatically. Once its first run succeeds, open **Settings → Pages** to find the live site URL.
